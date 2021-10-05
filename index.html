@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="style.css">
+ <title>City Landing Page</title>
+</head>
+
+<body>
+ <section class="showcase">
+  <video src="assets/background_video.mp4" loop autoplay muted></video>
+
+  <header>
+   <h2 class="logo">New York</h2>
+   <div class="toggle"></div>
+  </header>
+
+  <div class="overlay"></div>
+  <div class="text">
+   <h1>Make memories</h2>
+   <h2>Every moment</h3>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit cum doloribus sapiente totam minima sequi
+    provident omnis fuga impedit veritatis, iure nihil harum molestiae consequuntur eos. Saepe praesentium autem sint?
+   </p>
+   <a href="#">Explore</a>
+  </div>
+
+  <ul class="socials">
+   <li><a href="#"><img src="assets/facebook.png" alt="facebookIcon"></a></li>
+   <li><a href="#"><img src="assets/instagram.png" alt="instagramIcon"></a></li>
+   <li><a href="#"><img src="assets/youtube.png" alt="youtubeIcon"></a></li>
+   <li><a href="#"><img src="assets/twitter.png" alt="twitterIcon"></a></li>
+  </ul>
+
+  <div class="credits">Created by: <a href="https://github.com/robxon" title="Robxon">Robert Kowalski</a>
+   <p>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></p>
+  </div>
+ </section>
+
+ <div class="menu">
+  <ul>
+   <li><a href="#">Home</a></li>
+   <li><a href="#">News</a></li>
+   <li><a href="#">City</a></li>
+   <li><a href="#">Blog</a></li>
+   <li><a href="#">Contact</a></li>
+  </ul>
+ </div>
+
+ <script>
+  const menuToggle = document.querySelector('.toggle')
+  const showCase = document.querySelector('.showcase')
+
+  menuToggle.addEventListener('click', function() {
+   menuToggle.classList.toggle('active')
+   showCase.classList.toggle('active')
+  })
+ </script>
+
+
+</body>
+
+</html>
